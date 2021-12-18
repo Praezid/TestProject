@@ -1,0 +1,114 @@
+[
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Fish",
+      "price": "75.15"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Fig",
+      "price": "40.67"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Butter",
+      "price": "50.95"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "Cheese",
+      "price": "14.67"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "Cream",
+      "price": "15.58"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Bacon",
+      "price": "249.90"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "Beef",
+      "price": "236.96"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "name": "Meat",
+      "price": "108.63"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "name": "Sausages",
+      "price": "98.30"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "name": "Potato",
+      "price": "12.90"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "name": "Onion",
+      "price": "28.93"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "name": "Carrots",
+      "price": "9.32"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "name": "Cucumbers",
+      "price": "50.99"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "name": "Tomatoes",
+      "price": "37.80"
+    }
+  }
+]
