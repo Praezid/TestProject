@@ -18,9 +18,6 @@ def index(request):
         context={'product_count': product_count, 'products': products},
     )
 
-def median_value(queryset, term):
-    count = queryset.count()
-    return queryset.values_list(term, flat=True).order_by(term)[int(round(count/2))]
 
 # API CRUD
 @api_view(['POST', 'DELETE'])
@@ -36,7 +33,7 @@ def products(request):
     elif request.method == 'DELETE':
         count = Product.objects.all().delete()
         return JsonResponse({'message': '{} Products were deleted successfully!'.format(count[0])},
-                        status=status.HTTP_204_NO_CONTENT)
+                            status=status.HTTP_204_NO_CONTENT)
 
 
 @api_view(['GET', 'DELETE'])
@@ -71,7 +68,6 @@ def expensivest(request):
                              'product': f'{product}'})
 
 
-
 @api_view(['GET'])
 def cheapest(request):
     if request.method == 'GET':
@@ -83,6 +79,7 @@ def cheapest(request):
 @api_view(['GET'])
 def median(request):
     if request.method == 'GET':
-        ordered_products = Product.objects.order_by('price')
+        ordered_products = Product.objects.all().order_by('price')
+        count = Product.objects.all()
         return JsonResponse({'message': 'The median product in the storage',
-                             'product': f'{ordered_products}'})
+                             'product': f'{ordered_products[int(round(count/2))]}'})
