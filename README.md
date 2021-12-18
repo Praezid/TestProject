@@ -8,6 +8,5 @@ Project launch:
 4) Run the virtual enviroment `.\env\Scripts\activate`
 5) Update pip `python -m pip install --upgrade pip`
 6) Install in the virtual enviroment the dependencies for the project `python -m pip install --no-cache-dir -r requirements.txt`
-7) 
-8)
-9)
+7) Fill in the data of the model 'Product' `python manage.py loaddata db.json`
+8) Start the local server `python manage.py runserver`
