@@ -8,5 +8,5 @@ urlpatterns = [
     path('products/count', views.count),
     path('products/expensivest', views.expensivest),
     path('products/cheapest', views.cheapest),
-    path('products/median', views.median),
+    #path('products/median', views.median),
 ]
