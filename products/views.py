@@ -18,6 +18,10 @@ def index(request):
         context={'product_count': product_count, 'products': products},
     )
 
+def median_value(queryset, term):
+    count = queryset.count()
+    return queryset.values_list(term, flat=True).order_by(term)[int(round(count/2))]
+
 # API CRUD
 @api_view(['POST', 'DELETE'])
 def products(request):
@@ -79,4 +83,6 @@ def cheapest(request):
 @api_view(['GET'])
 def median(request):
     if request.method == 'GET':
-        pass
+        ordered_products = Product.objects.order_by('price')
+        return JsonResponse({'message': 'The median product in the storage',
+                             'product': f'{ordered_products}'})
